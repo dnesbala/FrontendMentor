@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("/images/pattern-bg.svg") no-repeat;
+  background-position: right;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* SVG Backgrounds */
+.quote-svg {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+.curve-svg {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Testimonial Card */
+.testimonial {
+  width: 85%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.testimonial-image {
+  margin-top: 100px;
+  float: right;
+}
+
+.left-slider,
+.right-slider {
+  width: 20px;
+  cursor: pointer;
+}
+
+.slider-image {
+  transform: translate(60px, -30px);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+}
+
+.testimonial-text {
+  width: 70%;
+  margin-top: 20vh;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+  line-height: 1.4;
+}
+
+.testimonial-writer {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(240, 38%, 20%);
+}
+
+.testimonial-post {
+  font-size: 1rem;
+  color: hsl(240, 18%, 77%);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  background-color: #cab391;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (max-width: 1360px) {
+  .testimonial-text {
+    width: 50%;
+  }
+}
