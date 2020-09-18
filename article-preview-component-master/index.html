@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="article">
+      <div class="article__container">
+        <figure class="article__image">
+          <img src="./images/drawers.jpg" alt="Drawers" />
+        </figure>
+
+        <div class="article__text">
+          <h2>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="article__share hide">
+            <p>share</p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+          </div>
+
+          <div class="article__author">
+            <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton" />
+            <div class="article__author__details">
+              <h4>Michelle Appleton</h4>
+              <p>28 Jun 2020</p>
+            </div>
+            <i class="fas fa-share"></i>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://dnesbala.github.io">Dinesh Bala</a>.
+      </div>
+    </div>
+
+    <script>
+      const shareIcon = document.querySelector(".fa-share");
+      const articleShare = document.querySelector(".article__share");
+      shareIcon.addEventListener("click", () => {
+        articleShare.classList.toggle("show");
+      });
+
+      // const newEl = document.createElement("i");
+      // newEl.classList.add("fas", "fa-share");
+
+      // const media = window.matchMedia("(max-width: 1055px)");
+      // if (media.matches && articleShare.className.includes("show")) {
+      //   articleShare.appendChild(newEl);
+      //   console.log(articleShare);
+      // }
+    </script>
+  </body>
+</html>
