@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__first">
+        <figure class="logo">
+          <img src="./images/logo.svg" alt="Fylo Logo" />
+        </figure>
+        <div class="icons">
+          <img src="./images/icon-document.svg" alt="Document" />
+          <img src="./images/icon-folder.svg" alt="Folder" />
+          <img src="./images/icon-upload.svg" alt="Upload" />
+        </div>
+      </div>
+
+      <div class="container__second">
+        <p>You've used <span>815 GB</span> of your storage</p>
+        <div class="progress__bar">
+          <progress min="0" max="1000" value="815"></progress>
+          <div class="storage__left">
+            <p><span>185</span>gb left</p>
+          </div>
+        </div>
+        <div class="progress__values">
+          <div>0GB</div>
+          <div>1000GB</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://dnesbala.github.io">Dinesh Bala</a>.
+    </div>
+  </body>
+</html>
