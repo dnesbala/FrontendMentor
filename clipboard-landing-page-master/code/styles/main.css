@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #4c545d;
+  font-weight: 600;
+}
+
+p {
+  color: #9fabb2;
+  font-weight: 400;
+}
+
+.button {
+  color: #fff;
+  padding: 1rem 3rem;
+  border: none;
+  border-bottom: 4px solid #9fabb2;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button__teal {
+  background-color: #26baa4;
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.button__teal:hover {
+  background-color: rgba(38, 186, 164, 0.7);
+}
+
+.button__purple {
+  background-color: #6173ff;
+}
+
+.button__purple:hover {
+  background-color: rgba(97, 115, 255, 0.7);
+}
+
+header#header {
+  background-image: url("../../images/bg-header-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+}
+
+header#header img {
+  height: 100px;
+  width: 100px;
+}
+
+header#header h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header#header p {
+  font-size: 22px;
+  margin-bottom: 3rem;
+}
+
+.feature {
+  margin-bottom: 3.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.heading h2 {
+  margin-bottom: 1rem;
+}
+
+section#partners .partners__images img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer#footer {
+  background-color: #eee;
+}
+
+footer#footer .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+footer#footer a {
+  text-decoration: none;
+  color: #4c545d;
+  font-weight: 600;
+  margin-right: 5rem;
+}
+
+footer#footer a:hover {
+  color: #26baa4;
+}
+
+footer#footer table td {
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 870px) {
+  header#header {
+    background-image: url("../../images/bg-header-mobile.png");
+  }
+  header#header p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  figure {
+    margin-bottom: 2rem;
+  }
+  .feature {
+    margin-bottom: 3.5rem;
+    text-align: center;
+  }
+  .button__teal {
+    margin-bottom: 1rem;
+  }
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .partners__images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 30rem;
+  }
+  footer#footer .logo {
+    text-align: center;
+  }
+  footer#footer table td {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-left: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.button {
+  color: $white;
+  padding: 1rem 3rem;
+  border: none;
+  border-bottom: 4px solid $grayish_blue;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  &__teal {
+    background-color: $strong_cyan;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+    &:hover {
+      background-color: rgba(38, 186, 164, 0.7);
+    }
+  }
+  &__purple {
+    background-color: $light_blue;
+    &:hover {
+      background-color: rgba(97, 115, 255, 0.7);
+    }
+  }
+}

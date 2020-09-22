@@ -1,0 +1,17 @@
+.feature {
+  margin-bottom: 3.5rem;
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+.heading {
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+section#partners .partners__images img {
+  object-fit: contain;
+}
